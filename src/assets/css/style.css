@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%
+}
+
+#header, #footer {
+	position:fixed;
+	width:100%;
+	top:0;
+    background:white;
+    height:55px;
+}
+
+#footer {
+    display: flex;
+	bottom:0;
+    top:auto;
+    box-shadow: 0px 0px 10px grey;
+    justify-content: center;
+}
+
+#content {
+	position:absolute;
+	top:135px;
+	bottom:60px;
+	width:100%;
+    overflow:auto;
+}
+
+
+/* Styling the head class */
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+.pic{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom:20px;
+}
+
+
+input{
+    border-radius: 1000px;
+    border: 1px solid red;
+    padding: 10px 20px;
+    margin-left: 13px;
+    width: 225px;
+    height: 40px;
+    font-size: 9.5px !important;
+}
+
+input:focus{
+    outline: none;
+}
+
+.pics{
+    width: 50px;
+    height: 50px;
+}
+
+
+/* For you elements */
+.element img{
+    display: inline-block;
+    padding: 3px 2px;
+    height: 100%;
+    width: 60%;
+}
+
+.element {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-color: none;
+}
+::-webkit-scrollbar {
+    width: 0px;  
+    background: transparent;
+} 
+
+a::-moz-focus-inner {
+  border: 0;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Section 3 */
+.sec3{
+    margin: 7px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.sec3 .card-header{
+    background: red !important;
+    color: white;
+    font-size: 12.5px;
+    letter-spacing: 1px;
+}
+
+.rounded{
+    box-shadow: 0px 1px 7px grey;
+}
+
+.sec3 #card{
+    border: 1px solid red;
+    /* height: 10rem !important; */
+}
+
+
+
+.sec3 #card img {
+    width: 100%;
+    object-fit: cover;
+    height: 50%;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+}
+
+.discount{
+    position: absolute;
+    top: 8px;
+    left: 13px;
+    background-color: #FAEDED;
+    padding: 4px;
+    color: red;
+    width: 50%;
+    font-weight: bolder;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 10.5px;
+}
+
+.maincontainer{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scrollbar-color: none;
+}
+
+.sec3 .contain{
+    margin: 7.5px;
+    margin-top: 15px;
+    margin-bottom: 8px !important;
+    display: inline-block !important;
+}
+.sec3 .contain a{
+    text-decoration: none;
+}
+
+
+.sec3 .contain a:focus{
+    text-decoration: none;
+}
+
+.sec3 .card-body{
+    margin: 9px !important;
+    padding: 0px !important;
+    font-size: 11.5px;
+    left: 0px;
+    color: black;
+}
+
+.sec3 .card-body p{
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 11.5px;
+    left: 0px;
+    color: black;
+}
+.card-body #text{
+    margin-bottom: 5px !important;
+}
+
+.naira{
+    text-decoration: line-through;
+    color: #EEEEEE;
+    margin-left: 10px;
+}
+
+/* Styling the section 4 */
+.sec4{
+    margin:15px 9px;
+}
+
+.sec4 .contain{
+    margin-left: 3px;
+    margin-bottom: 8px;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec4 .contain a{
+    text-decoration: none;
+}
+
+
+.sec4 .contain a:focus{
+    text-decoration: none;
+}
+
+
+
+.sec4 #card{
+    border: 1px solid #f6f5f5;
+    width: 9rem;
+    padding-bottom: 5px !important;
+
+    /* height: 13rem; */
+
+}
+
+.sec4 #card img {
+    width: 100%;
+    height: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.sec4 .card-body{
+    margin: 4px !important;
+    padding: 0px !important;
+    font-size: 11.5px;
+    left: 0px;
+    color: black;
+}
+
+.sec4 .card-body p{
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 11.5px;
+    left: 0px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling the footer */
+.foo{
+    fill: black;
+    width: 22px;
+    height: 20.63px;
+}
+
+.foo:hover{
+    fill: red;
+}
+
+.go div{
+    vertical-align: top;
+    display: inline-block;
+    padding: 8px 19px;
+    text-align: center;
+}
+
+.go div a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.go div a:hover{
+    color: red;
+    font-weight: bolder;
+}
+
+.go div a:focus{
+    outline: none !important;
+}
+
+.go svg{
+    width: 16px;
+    height: 16px;
+}
+
+
+
+/* Media Screens */
+
+@media only screen and  (max-width: 426px){
+    .go div{
+        padding: 8px 32px;
+    }
+
+    /* section 4 */
+    .sec4{
+        margin:15px 0px;
+    }
+    
+    .sec4 .contain{
+        margin-left: 13px;
+        margin-bottom: 15px;
+    }
+
+    .sec4 #card{
+        border: 1px solid #f6f5f5;
+        width: 12rem;
+
+    }
+}
+
+@media only screen and  (max-width: 376px){
+    .go div{
+        padding: 8px 23px;
+    }
+
+    /* section 4 */
+    .sec4{
+        margin:15px 6px;
+    }
+    .sec4 .contain{
+        margin: 2px;
+        padding: 0;
+    }
+
+    .sec4 #card{
+        width: 11rem;
+    }
+}
+
+@media only screen and  (max-width: 321px){
+    .go div{
+        padding: 8px 19px;
+    }
+
+    /* section 4 */
+    .sec4{
+        margin:15px 2px;
+    }
+    
+    .sec4 .contain{
+        margin-left: 7px;
+        margin-bottom: 15px;
+    }
+
+    .sec4 #card{
+        border: 1px solid #f6f5f5;
+        width: 9rem;
+
+    }
+    
+    
+}
+
+
+
+
+
+
