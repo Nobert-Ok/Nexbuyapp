@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <app-header></app-header>
+    <app-header></app-header>
     <main id="content">
       <section class="sec2"><div id="gg"></div>
             <div class="element">
@@ -11,9 +11,9 @@
       </section>
       <app-deals></app-deals>
       <app-displays></app-displays>
-    </main>-->
+    </main>
     <app-footer></app-footer> 
-    <router-view></router-view>
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
