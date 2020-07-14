@@ -122,6 +122,7 @@ export default {
       { title: 'FOR YOU', value: 'tab2' },
       { title: 'TRENDING', value: 'tab3' },
       { title: 'CATEGORIES', value: 'tab4' },
+      { title: 'LOCAL BRANDING', value: 'tab5' },
     ],
     currentTab: 'tab2',
     variant:'dark'
