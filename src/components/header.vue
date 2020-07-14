@@ -17,6 +17,27 @@
           @onClick="handleClick"
         />
     </header>
+    <div class="content">
+              <div v-if="currentTab === 'tab1'">
+              </div>
+              <div v-if="currentTab === 'tab2'">
+                <main id="content">
+                  <section class="sec2"><div id="gg"></div>
+                      <div class="element">
+                          <a href="#"><img src="../assets/images/ad3.png" alt=""></a>
+                          <a href="#"><img src="../assets/images/ad1.png" alt=""></a>
+                          <a href="#"><img src="../assets/images/ad2.png" alt=""></a>
+                      </div>
+                  </section>
+                  <app-deals></app-deals>
+                  <app-displays></app-displays>
+                </main>
+                <app-footer></app-footer>
+              </div>
+              <div v-if="currentTab === 'tab3'">
+              </div>
+       </div>
+
     <b-sidebar
       id="sidebar-backdrop"
       title=""
@@ -58,13 +79,13 @@
             </div>
             <div class="links">
                 <ul class="ul2">
-                    <li><a href="#">NexApp</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Terms and Condition</a></li>
-                    <li><a href="#">Chat with us</a></li>
-                    <li><a href="#">Refer us and win</a></li>
-                    <li><a href="#">My store</a></li>
-                    <li><a href="#">Customer Care</a></li>
+                    <li><a to="#">NexApp</a></li>
+                    <li><a to="#">About us</a></li>
+                    <li><a to="#">Terms and Condition</a></li>
+                    <li><a to="#">Chat with us</a></li>
+                    <li><a to="#">Refer us and win</a></li>
+                    <li><a to="#">My store</a></li>
+                    <li><a to="#">Customer Care</a></li>
                 </ul>
             </div>
             <div class="socials">
@@ -82,25 +103,18 @@
 
 <script>
 import Tabs from 'vue-tabs-with-active-line';
+import deals from '../components/deals';
+import displays from '../components/displays';
+import footer from '../components/footer';
 
 
-const TABS = [{
-  title: 'STORIES',
-  value: 'tab1',
-}, {
-  title: 'FOR YOU',
-  value: 'tab2',
-}, {
-  title: 'TRENDING',
-  value: 'tab3',
-}, {
-  title: 'CATEGORIES',
-  value: 'tab4',
-}];
 
 export default {
   components: {
     Tabs,
+    'app-deals':deals, 
+    'app-displays':displays, 
+    'app-footer':footer,
   },
   data: () => ({
     tabs: [
@@ -109,8 +123,8 @@ export default {
       { title: 'TRENDING', value: 'tab3' },
       { title: 'CATEGORIES', value: 'tab4' },
     ],
-    currentTab: 'tab1',
-    variant:''
+    currentTab: 'tab2',
+    variant:'dark'
   }),
   methods: {
     handleClick(newTab) {
@@ -129,7 +143,7 @@ export default {
 
 
 
-<style lang="css">
+<style lang="css" scoped>
   #sidebar-backdrop{
     width: 60%;
   }
