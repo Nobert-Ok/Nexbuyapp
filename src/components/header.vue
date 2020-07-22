@@ -16,13 +16,15 @@
           :line-class="'default-tabs__active-line'"
           @onClick="handleClick"
         />
+        <div id="gg"></div>
     </header>
+    
     <div class="content">
               <div v-if="currentTab === 'tab1'">
               </div>
               <div v-if="currentTab === 'tab2'">
                 <main id="content">
-                  <section class="sec2"><div id="gg"></div>
+                  <section class="sec2">
                       <div class="element">
                           <a href="#"><img src="../assets/images/ad3.png" alt=""></a>
                           <a href="#"><img src="../assets/images/ad1.png" alt=""></a>
@@ -79,13 +81,13 @@
             </div>
             <div class="links">
                 <ul class="ul2">
-                    <li><a to="#">NexApp</a></li>
-                    <li><a to="#">About us</a></li>
-                    <li><a to="#">Terms and Condition</a></li>
-                    <li><a to="#">Chat with us</a></li>
-                    <li><a to="#">Refer us and win</a></li>
-                    <li><a to="#">My store</a></li>
-                    <li><a to="#">Customer Care</a></li>
+                    <li><a to="/">NexApp</a></li>
+                    <li><router-link to="/aboutus">About us</router-link></li>
+                    <li><router-link to="/terms">Terms and Conditions</router-link></li>
+                    <li><router-link to="#">Chat with us</router-link></li>
+                    <li><router-link to="#">Refer us and win</router-link></li>
+                    <li><router-link to="#">My store</router-link></li>
+                    <li><router-link to="/customercare">Customer Care</router-link></li>
                 </ul>
             </div>
             <div class="socials">
@@ -144,10 +146,18 @@ export default {
 
 
 
-<style lang="css" scoped>
+<style>
+#gg{
+  width: 100%;
+  background-color: 1px solid gray;
+
+}
+
   #sidebar-backdrop{
-    width: 60%;
+    width: 60% !important;
   }
+
+
 </style>
 
 <style lang="scss">
@@ -180,7 +190,7 @@ export default {
 
     }
     &:hover {
-      // border-bottom: 2px solid red;
+      border-bottom: 2px solid red;
       border-image: url('../assets/images/Rectangle.png');
       color: red;
       font-weight: bolder;

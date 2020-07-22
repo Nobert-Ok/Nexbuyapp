@@ -5,10 +5,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* @font-face{
+    src: url(../fonts/Rene-Bieder-Milliard-Book.otf);
+    font-family: 'milliard';
+} */
+
+
 html, body {
     margin:0;
     padding:0;
-    height:100%
+    height:100%;
+    font-family: 'milliard';
 }
 
 #header, #footer {

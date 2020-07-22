@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router/index'
+
 import '../scss/custom.scss'
 import './assets/css/style.css'
 import './assets/css/sidemenu.css'
@@ -17,6 +19,7 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 
 new Vue({
+  router,
   el: '#app',
   render: h => h(App),
   // router
