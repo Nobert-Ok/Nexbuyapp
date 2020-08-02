@@ -73,10 +73,12 @@
             </div>
         </div>
     </footer>
-  </div>
+  </div> 
+
 </template>
 
 <script>
+
 
 
 export default {
@@ -87,6 +89,43 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+/* styling the footer */
+.foo{
+    fill: black;
+    width: 22px;
+    height: 20.63px;
+}
 
+.foo:hover{
+    fill: red;
+}
+
+.go div{
+    vertical-align: top;
+    display: inline-block;
+    padding: 8px 19px;
+    text-align: center;
+}
+
+.go div a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.go div a:hover{
+    color: red;
+    font-weight: bolder;
+}
+
+.go div a:focus{
+    outline: none !important;
+}
+
+.go svg{
+    width: 16px;
+    height: 16px;
+}
 </style>
+

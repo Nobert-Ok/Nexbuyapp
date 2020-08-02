@@ -6,7 +6,6 @@
       <terms></terms>
       <customer></customer>
       <privacy></privacy> -->
-
       <router-view></router-view>
   </div>
 </template>
@@ -20,6 +19,7 @@
 // import terms from './components/sidemenu/terms'
 // import customer from './components/sidemenu/Customercare'
 // import privacy from './components/sidemenu/privacy'
+import myaccount from './components/myaccount'
 
 export default {
   name: 'App',

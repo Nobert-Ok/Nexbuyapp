@@ -1,7 +1,7 @@
 <template>
    <div>
         <header>
-            <a @onclick="$router.go(-1)"><img src="../../assets/images/Path50.png" alt=""></a>
+            <router-link to="/"><img src="../../assets/images/Path50.png" alt=""></router-link>
             <p>Terms and Conditions</p>
         </header>
         <section id="sec1">

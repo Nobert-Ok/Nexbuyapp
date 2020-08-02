@@ -81,7 +81,7 @@
             </div>
             <div class="links">
                 <ul class="ul2">
-                    <li><a to="/">NexApp</a></li>
+                    <li><router-link to="/">NexApp</router-link></li>
                     <li><router-link to="/aboutus">About us</router-link></li>
                     <li><router-link to="/terms">Terms and Conditions</router-link></li>
                     <li><router-link to="#">Chat with us</router-link></li>

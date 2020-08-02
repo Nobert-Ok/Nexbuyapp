@@ -13,6 +13,7 @@ import customercare from '../components/sidemenu/Customercare'
 import privacy from '../components/sidemenu/privacy'
 import terms from '../components/sidemenu/terms'
 import header from '../components/header'
+import myaccount from '../components/myaccount'
 
 
 
@@ -57,6 +58,10 @@ export default new Router({
     {path: '/terms',      
     name: 'terms',      
     component: terms,
+    },
+    {path: '/myaccount',      
+    name: 'myaccount',      
+    component: myaccount,
     },
 ]});
 
