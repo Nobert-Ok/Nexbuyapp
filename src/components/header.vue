@@ -55,7 +55,7 @@
                 <div class="profile-details">
                     <p style="font-weight: bold;" class="para">James Itubo</p>
                     <p class="para">RCustomNG store</p>
-                    <p class="para"><a href="#" style="color: red;">View full profile</a></p>
+                    <p class="para"><router-link to='/myaccount' style="color: red;">View full profile</router-link></p>
                     <p class="para"><a href="#" v-b-modal.modal-sm ><img src="../assets/images/premium.png" alt="" class="bullet"> Go Premium</a></p>
                     <b-modal id="modal-sm" centered size="sm" title="Why you need to Go Premium" header-text-variant="light" hide-header-close header-bg-variant='secondary'>
                       <p>Going premium lets you do this
