@@ -103,13 +103,12 @@ header p{
 #edit a{
     margin-left: 50%;
     color: red;
-    font-size: 21.5px;
+    font-size: 16.5px;
     padding-left: 5px;
-
 }
 #edit .pencil{
-    width:35px;
-    height:33px;
+    width:29px;
+    height:20px;
     padding-right: 7px;
 }
 a img{
@@ -179,6 +178,7 @@ a img{
     background: rgb(228, 226, 226);
     width: 100%;
     height: 8px;
+    margin-bottom: 10px;
 }
 
 .info{
@@ -190,10 +190,12 @@ a img{
 }
 .info ul li{
     padding: 15px;
+    font-size: 17.5px;
 }
 .info img{
-    width: 23px;
-    height: 23px;
+    width: 19px;
+    height: 18px;
+    margin-right:8px;
 }
 .info div{
     width: 90%;
@@ -213,8 +215,10 @@ a img{
 .info2 a{
     margin-left: 50%;
     color: red;
-    font-size: 18.5px;
+    font-size: 16.5px;
+    margin-top: 15px;
     padding-left: 5px;
+    padding-top: 15px;
 
 }
 
@@ -224,10 +228,13 @@ a img{
 }
 .info2 ul li{
     padding: 15px;
+    font-size: 17.5px;
+
 }
 .info2 img{
-    width: 21px;
-    height: 23px;
+    width: 16.5px;
+    height: 19px;
+    margin-right:8px;
 }
 .info2 div{
     width: 90%;
