@@ -14,6 +14,7 @@ import privacy from '../components/sidemenu/privacy'
 import terms from '../components/sidemenu/terms'
 import header from '../components/header'
 import myaccount from '../components/myaccount'
+import preloader from '../components/preloader'
 
 
 
@@ -21,6 +22,7 @@ Vue.use(Router)
 
 export default new Router({
     mode:'history',
+    
     routes: [
     {path: '/',
     name: 'header',
@@ -62,6 +64,10 @@ export default new Router({
     {path: '/myaccount',      
     name: 'myaccount',      
     component: myaccount,
+    },
+    {path: '/preloader',      
+    name: 'preloader',      
+    component: preloader,
     },
 ]});
 

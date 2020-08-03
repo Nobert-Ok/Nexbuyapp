@@ -88,6 +88,14 @@ header{
     position: relative;
 }
 
+h2{
+    font-size: 24.5px;
+    font-weight: bolder;
+}
+h5{
+    font-size: 18.5px;
+}
+
 header p{
     color: white;
     font-size:17.5px;
@@ -95,7 +103,8 @@ header p{
 }
 
 #edit {
-    margin-top: 10px;
+    position: static;
+    margin-top: 20px;
     list-style: none;
     width: 100%;
 }
@@ -149,6 +158,7 @@ a img{
 .premium p{
     padding-top: 18px;
     margin-left: 35px;
+    font-size: 14.5px;
 }
 
 .premium #topdiv{
@@ -165,7 +175,8 @@ a img{
     border-radius: 10px;
     background-color: #FFEFEF;
     color: #FF0000;
-    padding-bottom:13.5px ;
+    padding-bottom:10.5px;
+    padding-top:10.5px !important;
     margin: 35px auto;
     text-align: center;
 
@@ -202,9 +213,10 @@ a img{
     border: 0.1px solid #f6f6f6;
 }
 .info ul li .arrow{
-    height: 15px;
-    width: 15px;
-    right: 0;
+    position:absolute;
+    height: 13px;
+    width: 13px;
+    right: 10%;
 }
 
 .info2{

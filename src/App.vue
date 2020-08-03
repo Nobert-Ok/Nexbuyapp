@@ -19,7 +19,7 @@
 // import terms from './components/sidemenu/terms'
 // import customer from './components/sidemenu/Customercare'
 // import privacy from './components/sidemenu/privacy'
-import myaccount from './components/myaccount'
+// import myaccount from './components/myaccount'
 
 export default {
   name: 'App',
@@ -30,6 +30,7 @@ export default {
     // 'terms':terms,
     // 'customer':customer,
     // 'privacy':privacy
+    // 'preloader':preloader,
   },
   
 }

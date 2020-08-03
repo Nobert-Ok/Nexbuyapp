@@ -1,5 +1,6 @@
 <template>
   <div>
+    <preloader></preloader>
     <header id="header">
         <div class="head">
             <div class="pic">
@@ -108,6 +109,8 @@ import Tabs from 'vue-tabs-with-active-line';
 import deals from '../components/deals';
 import displays from '../components/displays';
 import footer from '../components/footer';
+import preloader from '../components/preloader'
+
 
 
 
@@ -117,6 +120,7 @@ export default {
     'app-deals':deals, 
     'app-displays':displays, 
     'app-footer':footer,
+    'preloader':preloader,
   },
   data: () => ({
     tabs: [
