@@ -25,7 +25,7 @@ export default {
 			show: true
 		}
 	},
-	mounted(){
+	created(){
 		if(Boolean(this.show)) this.showToggle()
 	},
 	methods: {
