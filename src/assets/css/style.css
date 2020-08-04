@@ -54,8 +54,15 @@ html, body {
 .pic{
     display: flex;
     justify-content: center;
-    padding: 30px;
-    padding-bottom:20px;
+    /* padding: 30px; */
+    margin-bottom:20px;
+    margin-top:30px;
+}
+
+.pic div{
+    display: inline-block;
+    padding: 0 5px;
+    justify-content: center;
 }
 
 
@@ -63,8 +70,7 @@ input{
     border-radius: 1000px;
     border: 1px solid red;
     padding: 10px 20px;
-    margin-left: 13px;
-    width: 225px;
+    width: 275px;
     height: 40px;
     font-size: 9.5px !important;
 }
@@ -127,6 +133,7 @@ a:focus {
 .sec3 #card{
     border: 1px solid red;
     /* height: 10rem !important; */
+    width: 7rem;
 }
 
 

@@ -4,8 +4,8 @@
     <header id="header">
         <div class="head">
             <div class="pic">
-                <a href="#" v-b-toggle.sidebar-backdrop><img src="../assets/images/pics.svg" alt="" class="pics"></a>
-                <input type="text" name="" id="" placeholder="Find anything, items, stores, brands">
+                <div><a href="#" v-b-toggle.sidebar-backdrop><img src="../assets/images/pics.svg" alt="" class="pics"></a></div>
+                <div><input type="text" name="" id="" placeholder="Find anything, items, stores, brands"></div>
             </div>
         </div>
         <tabs
@@ -21,25 +21,29 @@
     </header>
     
     <div class="content">
-              <div v-if="currentTab === 'tab1'">
-              </div>
-              <div v-if="currentTab === 'tab2'">
-                <main id="content">
-                  <section class="sec2">
-                      <div class="element">
-                          <a href="#"><img src="../assets/images/ad3.png" alt=""></a>
-                          <a href="#"><img src="../assets/images/ad1.png" alt=""></a>
-                          <a href="#"><img src="../assets/images/ad2.png" alt=""></a>
-                      </div>
-                  </section>
-                  <app-deals></app-deals>
-                  <app-displays></app-displays>
-                </main>
-                <app-footer></app-footer>
-              </div>
-              <div v-if="currentTab === 'tab3'">
-              </div>
-       </div>
+            <div v-if="currentTab === 'tab1'">
+            </div>
+            <div v-if="currentTab === 'tab2'">
+              <main id="content">
+                <section class="sec2">
+                    <div class="element">
+                        <a href="#"><img src="../assets/images/ad3.png" alt=""></a>
+                        <a href="#"><img src="../assets/images/ad1.png" alt=""></a>
+                        <a href="#"><img src="../assets/images/ad2.png" alt=""></a>
+                    </div>
+                </section>
+                <app-deals></app-deals>
+                <app-displays></app-displays>
+              </main>
+              <app-footer></app-footer>
+            </div>
+            <div v-if="currentTab === 'tab3'">
+            </div>
+            <div v-if="currentTab === 'tab4'">
+            </div>
+            <div v-if="currentTab === 'tab5'">
+            </div>
+    </div>
 
     <b-sidebar
       id="sidebar-backdrop"
@@ -128,7 +132,7 @@ export default {
       { title: 'FOR YOU', value: 'tab2' },
       { title: 'TRENDING', value: 'tab3' },
       { title: 'CATEGORIES', value: 'tab4' },
-      { title: 'LOCAL BRANDING', value: 'tab5' },
+      { title: 'LOCAL BRANDS', value: 'tab5' },
     ],
     currentTab: 'tab2',
     variant:'dark'
@@ -167,7 +171,7 @@ export default {
 <style lang="scss">
 .default-tabs {
   position: relative;
-  margin: 0 auto;
+  // margin: 0 auto;
   overflow-x:scroll;
   overflow-y: hidden;
   white-space: nowrap;
@@ -194,7 +198,7 @@ export default {
 
     }
     &:hover {
-      border-bottom: 2px solid red;
+      // border-bottom: 2px solid red;
       border-image: url('../assets/images/Rectangle.png');
       color: red;
       font-weight: bolder;
@@ -216,13 +220,49 @@ export default {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2px;
-    background-color: red;
+    height: 4px;
+    background-image:  url('../assets/images/Rectangle.png');
+    background-size: 100%;
     transition: transform 0.4s ease, width 0.4s ease;
   }
 }
 .content {
   margin-top: 30px;
   font-size: 20px;
+}
+
+
+@media only screen and (min-width: 375px) {
+
+.pic div{
+    display: inline-block;
+    padding: 0 13px;
+    justify-content: center;
+}
+input{
+    width: 295px;
+}
+}
+@media only screen and (max-width: 375px) {
+
+.pic div{
+    display: inline-block;
+    padding: 0 11px;
+    justify-content: center;
+}
+input{
+    width: 270px;
+}
+}
+@media only screen and (max-width: 320px) {
+
+.pic div{
+    display: inline-block;
+    padding: 0 11px;
+    justify-content: center;
+}
+input{
+    width: 225px;
+}
 }
 </style>
