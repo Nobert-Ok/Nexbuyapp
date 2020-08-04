@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- <preloader></preloader> -->
+    <preloader></preloader>
     <header id="header">
         <div class="head">
             <div class="pic">
@@ -247,22 +247,22 @@ input{
 
 .pic div{
     display: inline-block;
-    padding: 0 11px;
+    padding: 0 9px;
     justify-content: center;
 }
 input{
-    width: 270px;
+    width: 250px;
 }
 }
 @media only screen and (max-width: 320px) {
 
 .pic div{
     display: inline-block;
-    padding: 0 11px;
+    padding: 0 8px;
     justify-content: center;
 }
 input{
-    width: 225px;
+    width: 225px; 
 }
 }
 </style>
