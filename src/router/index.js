@@ -15,6 +15,7 @@ import terms from '../components/sidemenu/terms'
 import header from '../components/header'
 import myaccount from '../components/myaccount'
 import preloader from '../components/preloader'
+import accountfooter from '../components/accountfooter'
 
 
 
@@ -68,6 +69,10 @@ export default new Router({
     {path: '/preloader',      
     name: 'preloader',      
     component: preloader,
+    },
+    {path: '/accountfooter',      
+    name: 'accountfooter',      
+    component: accountfooter,
     },
 ]});
 

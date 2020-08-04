@@ -52,8 +52,8 @@ export default {
     z-index: 9999;
 }
 img {
-    height: 150px;
-    width: 150px; 
+    height: 120px;
+    width: 120px; 
     position: absolute;
     margin:auto;
     top:0;

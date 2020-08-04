@@ -11,11 +11,10 @@
                       0,0-.368.75v18.823a.978.978,0,0,0,.941.941h9.882a.978.978,0,0,0,.941-.941v-6.588a3.765,
                       3.765,0,0,1,7.529,0v6.588a.978.978,0,0,0,.941.941h9.882a.978.978,0,0,0,.941-.941V980.6a.96.96,
                       0,0,0-.368-.75L33.1,968.554a.953.953,0,0,0-1.147,0Zm.574,1.926,13.647,10.573v17.426h-8v-5.647a5.647,
-                      5.647,0,0,0-11.294,0v5.647h-8V981.053Z" transform="translate(0 0)" fill="#2a2a2a"
-                                stroke="#f20c0c" stroke-linecap="square" stroke-width="2" />
+                      5.647,0,0,0-11.294,0v5.647h-8V981.053Z" transform="translate(0 0)"  />
                         </g>
                     </svg>
-                    <p style="color:red; font-weight:bolder">Home</p>
+                    <p>Home</p>
                 </router-link>
             </div>
 
@@ -48,9 +47,10 @@
                             1-176-86.024c0,.134,0,.27,0,.4h-1.61c0-.127.005-.262.005-.4A14.951,14.951,0,0,0-192.5-101,14.951,
                             14.951,0,0,0-207.39-86.024c0,.133,0,.269.006.4H-176V-84Zm9.658-25.5a6.869,6.869,0,0,0,6.841,6.881,
                             6.869,6.869,0,0,0,6.842-6.881,6.869,6.869,0,0,0-6.842-6.881A6.869,6.869,0,0,0-199.342-109.5Z"
-                            transform="translate(209 118)" />
+                            transform="translate(209 118)" fill="#2a2a2a"
+                                stroke="#f20c0c" stroke-linecap="square" stroke-width="2" />
                     </svg>
-                    <p>Account</p>
+                    <p style="color:red; font-weight:bolder">Account</p>
                 </router-link>
             </div>
             <div>
@@ -91,6 +91,18 @@ export default {
 
 <style scoped>
 /* styling the footer */
+ #footer {
+	position:fixed;
+	width:100%;
+	top:0;
+    background:white;
+    height:65px;
+	bottom:0;
+    top:auto;
+    box-shadow: 0px 0px 5px grey;
+    justify-content: center;
+}
+
 .foo{
     fill: black;
     width: 22px;
@@ -105,9 +117,8 @@ export default {
     /* position: absolute; */
     display: inline-flex;
     text-align: center;
-    margin: 10px 25px;
+    margin: 10px 24px;
 }
-
 
 .go div a{
     text-decoration: none;
@@ -131,25 +142,27 @@ export default {
 
 @media only screen and  (min-width: 375px){
     .go div{
-    margin: 10px 30px;
+    margin: 10px 30.5px;
     }
 }
 
 @media only screen and  (max-width: 375px){
     .go div{
-    margin: 10px 25px;
+    margin: 10px 26px;
     }
 }
 
 @media only screen and  (max-width: 360px){
     .go div{
-    margin: 10px 23px;
+    margin: 10px 24px;
     }
 }
 @media only screen and  (max-width: 320px){
     .go div{
-    margin: 10px 18px;
+    margin: 10px 19px;
     }
 }
+
+
 </style>
 

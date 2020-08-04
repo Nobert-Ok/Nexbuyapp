@@ -68,7 +68,7 @@
     // import 'babel-polyfill'; // es6 shim
 	// import Vue from 'vue';
     // import myUpload from 'vue-image-crop-upload';
-    import footer from '../components/footer';
+    import footer from '../components/accountfooter';
 export default {
     components:{
         "app-footer": footer
@@ -127,8 +127,8 @@ a img{
 }
 
 .profile{
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    max-width: 170px;
     top: 14%;
     position: absolute;
     margin-left: 30px;
@@ -236,7 +236,7 @@ a img{
 
 .info2 ul{
    list-style: none;
-   margin-bottom:60px;
+   margin-bottom:70px;
 }
 .info2 ul li{
     padding: 15px;
@@ -254,7 +254,78 @@ a img{
 }
 
 
+@media only screen and  (min-width: 375px){
+    .naming{
+    margin-top: 60px;
+    margin-left: 35px;
+}
+    .profile{
+    height: 180px;
+    max-width: 180px;
+    top: 9%;
+    position: absolute;
+    margin-left: 30px;
+}
+#edit {
+    margin-top: 8px;
+}
 
+#edit a{
+    margin-left: 55%;
+    color: red;
+    font-size: 16.5px;
+    padding-left: 10px;
+}
+
+}
+@media only screen and  (max-width: 375px){
+    .naming{
+    margin-top: 60px;
+    margin-left: 35px;
+}
+    .profile{
+    height: 170px;
+    max-width: 170px;
+    top: 10%;
+    position: absolute;
+    margin-left: 22px;
+}
+#edit {
+    margin-top: 8px;
+}
+
+#edit a{
+    margin-left: 55%;
+    color: red;
+    font-size: 14.5px;
+    padding-left: 5px;
+}
+
+}
+@media only screen and  (max-width: 320px){
+    .naming{
+    margin-top: 60px;
+    margin-left: 35px;
+}
+    .profile{
+    height: 160px;
+    max-width: 160px;
+    top: 13%;
+    position: absolute;
+    margin-left: 21px;
+}
+#edit {
+    margin-top: 8px;
+}
+
+#edit a{
+    margin-left: 55%;
+    color: red;
+    font-size: 13.5px;
+    padding-left: 5px;
+}
+
+}
 
 
 

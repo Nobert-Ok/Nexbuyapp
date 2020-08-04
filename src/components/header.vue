@@ -1,6 +1,6 @@
 <template>
   <div>
-    <preloader></preloader>
+    <!-- <preloader></preloader> -->
     <header id="header">
         <div class="head">
             <div class="pic">
