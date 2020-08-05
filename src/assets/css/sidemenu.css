@@ -1,5 +1,7 @@
 .slide{
     position: absolute;
+    overflow-x:hidden;
+    overflow-y: scroll;
 }
 .details{
     margin-left: 25px;
