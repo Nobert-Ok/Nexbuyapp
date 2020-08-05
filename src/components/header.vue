@@ -54,7 +54,7 @@
       >
       <div class="slide">
             <div class="details">
-                <div >
+                <div class="img">
                     <img src="../assets/images/Group 24.png" alt="" class="profile-pic">
                 </div>
                 <div class="profile-details">
@@ -171,13 +171,11 @@ export default {
 <style lang="scss">
 .default-tabs {
   position: relative;
-  // margin: 0 auto;
   overflow-x:scroll;
   overflow-y: hidden;
   white-space: nowrap;
   scrollbar-color: none;
-  display:flex;
-  justify-content:center;
+
 
   &__item {
     display: inline-block;
