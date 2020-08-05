@@ -107,7 +107,7 @@ export default {
     #sec1 p{
         color:black;
         font-size:11px;
-        margin-right:35px;
+        margin-right:10px;
         text-align:justify;
         line-height:20px;
         margin-bottom:30px;
