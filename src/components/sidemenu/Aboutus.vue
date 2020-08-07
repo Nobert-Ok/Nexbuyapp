@@ -74,19 +74,22 @@ export default {
 
 <style scoped>
     header{
+        position: fixed;
+        top:0;
         background-color: #AAA;
         display: inline-flex;
         padding:15px;
+        padding-bottom: 4px !important;
         width:100%;
     }
     header p{
         color: white;
-        font-size:18.5px;
+        font-size:15.5px;
         margin-left:25%;
         right:0;
     }
     a img{
-        width:30px;
+        max-width:30px;
         height:20px;
         left: 0px !important;
     }
@@ -97,7 +100,10 @@ export default {
     }
 
     #sec1{
+        position: auto;
+        /* top:1000px; */
         padding:20px;
+        margin-top: 70px;
     }
 
     #sec1 h4{

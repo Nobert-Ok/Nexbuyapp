@@ -20,7 +20,7 @@
 
 
             <div>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.554 29.63">
+                <router-link to="/store"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.554 29.63">
                         <g id="noun_Shop_2647565" transform="translate(-5.016 -13.71)">
                             <g id="Group_11" data-name="Group 11" transform="translate(5.016 13.71)">
                                 <path id="Path_48" data-name="Path 48"
@@ -35,7 +35,7 @@
                         </g>
                     </svg>
                     <p>Store</p>
-                </a>
+                </router-link>
             </div>
             <div>
                 <router-link to="./myaccount"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33.999" viewBox="0 0 33 33.999">
@@ -54,7 +54,7 @@
                 </router-link>
             </div>
             <div>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
+                <router-link to="#"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
                         viewBox="0 0 41.741 33.895">
                         <g id="noun_cart_1665954" transform="translate(-1.4 -3.408)">
                             <path id="Path_52" data-name="Path 52"
@@ -69,7 +69,7 @@
                         </g>
                     </svg>
                     <p>Cart</p>
-                </a>
+                </router-link>
             </div>
         </div>
     </footer>
@@ -142,24 +142,24 @@ export default {
 
 @media only screen and  (min-width: 375px){
     .go div{
-    margin: 10px 30.5px;
+    margin: 10px 30px;
     }
 }
 
 @media only screen and  (max-width: 375px){
     .go div{
-    margin: 10px 26px;
+    margin: 10px 25px;
     }
 }
 
 @media only screen and  (max-width: 360px){
     .go div{
-    margin: 10px 24px;
+    margin: 10px 23px;
     }
 }
 @media only screen and  (max-width: 320px){
     .go div{
-    margin: 10px 19px;
+    margin: 10px 18px;
     }
 }
 

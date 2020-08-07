@@ -21,7 +21,7 @@
 
 
             <div>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.554 29.63">
+                <router-link to="./store"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.554 29.63">
                         <g id="noun_Shop_2647565" transform="translate(-5.016 -13.71)">
                             <g id="Group_11" data-name="Group 11" transform="translate(5.016 13.71)">
                                 <path id="Path_48" data-name="Path 48"
@@ -36,7 +36,7 @@
                         </g>
                     </svg>
                     <p>Store</p>
-                </a>
+                </router-link>
             </div>
             <div>
                 <router-link to="./myaccount"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33.999" viewBox="0 0 33 33.999">

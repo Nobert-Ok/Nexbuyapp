@@ -16,6 +16,9 @@ import header from '../components/header'
 import myaccount from '../components/myaccount'
 import preloader from '../components/preloader'
 import accountfooter from '../components/accountfooter'
+import store from '../components/Nexbuystore1'
+import storefooter from '../components/storefooter'
+// import cartfooter from '../components/cartfooter'
 
 
 
@@ -66,6 +69,10 @@ export default new Router({
     name: 'myaccount',      
     component: myaccount,
     },
+    {path: '/store',      
+    name: 'store',      
+    component: store,
+    },
     {path: '/preloader',      
     name: 'preloader',      
     component: preloader,
@@ -74,6 +81,14 @@ export default new Router({
     name: 'accountfooter',      
     component: accountfooter,
     },
+    {path: '/storefooter',      
+    name: 'storefooter',      
+    component: storefooter,
+    },
+    // {path: '/cartfooter',      
+    // name: 'cartfooter',      
+    // component: cartfooter,
+    // },
 ]});
 
 

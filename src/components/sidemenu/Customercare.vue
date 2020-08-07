@@ -80,6 +80,8 @@ export default {
 }
 
 header{
+    position: fixed;
+    top:0;
     background-color: #AAA;
     display: inline-flex;
     padding:25px;
@@ -107,6 +109,14 @@ a img{
     padding-bottom:30px;
     display:inline-flex;
     justify-content: center;
+    margin-top: 70px;
+}
+#sec1 img{
+    max-width: 80%;
+}
+#sec2{
+    position: relative;
+    z-index: -1;
 }
 
 #sec2 h2{

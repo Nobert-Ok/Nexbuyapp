@@ -163,6 +163,8 @@ export default {
 }
 
 header{
+    position: fixed;
+    top:0;
     background-color: #AAA;
     display: inline-flex;
     padding:25px;
@@ -189,6 +191,7 @@ a img{
 
 #sec1{
     padding:20px;
+    margin-top: 70px;
 }
 
 #sec1 h4{
@@ -205,6 +208,8 @@ a img{
 }
 #sec2{
     padding:25px;
+    position: relative;
+    z-index: -1;
 }
 
 .sec3 h2{

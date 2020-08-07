@@ -19,6 +19,7 @@
         />
         <div id="gg"></div>
     </header>
+
     
     <div class="content">
             <div v-if="currentTab === 'tab1'">
@@ -155,6 +156,12 @@ export default {
 
 
 <style>
+
+.tabs{
+  /* background-color: white; */
+  z-index: 1;
+}
+
 #gg{
   width: 100%;
   background-color: 1px solid gray;
