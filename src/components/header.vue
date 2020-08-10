@@ -158,7 +158,7 @@ export default {
 <style>
 
 .tabs{
-  /* background-color: white; */
+  background-color: white;
   z-index: 1;
 }
 
