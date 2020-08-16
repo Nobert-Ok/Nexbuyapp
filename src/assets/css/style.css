@@ -23,10 +23,12 @@ html, body {
 	width:100%;
 	top:0;
     background:white;
-    height:65px;
+    
 }
 #header{
-	top:0;
+    top:0;
+    width:100%;
+    height:15px !important;
 }
 
 #footer {
@@ -35,6 +37,7 @@ html, body {
     top:auto;
     box-shadow: 0px 0px 5px grey;
     justify-content: center;
+    height:65px;
 }
 
 #content {
@@ -43,7 +46,24 @@ html, body {
 	width:100%;
     overflow:auto;
     z-index: -1;
+    margin-top: 46%;
+    margin-bottom: 20%;
 } 
+@media only screen and (min-width: 375px) {
+    #content {
+        margin-top: 42%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #content {
+        margin-top: 53%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    #content {
+        margin-top: 47%;
+    }
+}
 
 
 /* Styling the head class */
@@ -179,6 +199,8 @@ a:focus {
 
 .rounded{
     box-shadow: 0px 1px 7px grey;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 .sec3 #card{
@@ -213,7 +235,7 @@ a:focus {
 }
 
 .maincontainer{
-    overflow-x: scroll;
+    overflow-x:scroll;
     overflow-y: hidden;
     white-space: nowrap;
     scrollbar-color: none;

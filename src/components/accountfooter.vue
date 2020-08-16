@@ -38,7 +38,7 @@
                 </router-link>
             </div>
             <div>
-                <router-link to="./myaccount"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33.999" viewBox="0 0 33 33.999">
+                <router-link to="/myaccount"><svg xmlns="http://www.w3.org/2000/svg" width="33" height="33.999" viewBox="0 0 33 33.999">
                         <path id="Union_1" data-name="Union 1"
                             d="M-209-84v-1.619h.005c0-.152-.005-.285-.005-.4a16.535,16.535,0,0,1,4.832-11.735,
                             16.38,16.38,0,0,1,7.516-4.333,8.5,8.5,0,0,1-1.824-1.4,8.472,8.472,0,0,1-2.475-6.011A8.484,
@@ -54,7 +54,7 @@
                 </router-link>
             </div>
             <div>
-                <router-link to="#"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
+                <router-link to="/cart1"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
                         viewBox="0 0 41.741 33.895">
                         <g id="noun_cart_1665954" transform="translate(-1.4 -3.408)">
                             <path id="Path_52" data-name="Path 52"

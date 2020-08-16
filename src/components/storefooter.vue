@@ -54,7 +54,7 @@
                 </router-link>
             </div>
             <div>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
+                <a href="./cart1"><svg xmlns="http://www.w3.org/2000/svg" width="41.741" height="33.895"
                         viewBox="0 0 41.741 33.895">
                         <g id="noun_cart_1665954" transform="translate(-1.4 -3.408)">
                             <path id="Path_52" data-name="Path 52"

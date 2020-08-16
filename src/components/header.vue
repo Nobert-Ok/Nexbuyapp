@@ -17,7 +17,6 @@
           :line-class="'default-tabs__active-line'"
           @onClick="handleClick"
         />
-        <div id="gg"></div>
     </header>
 
     
@@ -148,69 +147,44 @@ export default {
 </script>
 
 
-
-
-
-
-
-
-
-<style>
-
-.tabs{
-  background-color: white;
-  z-index: 1;
-}
-
-#gg{
-  width: 100%;
-  background-color: 1px solid gray;
-
-}
-
-  #sidebar-backdrop{
-    width: 60% !important;
-  }
-
-
-</style>
-
 <style lang="scss">
 .default-tabs {
+  width: 100%;
   position: relative;
+  margin: 0 auto;
   overflow-x:scroll;
   overflow-y: hidden;
   white-space: nowrap;
   scrollbar-color: none;
-
+  background-color: white;
+  // border: 1px solid red;
+  box-shadow: 0 5px 9px -6px grey;
 
   &__item {
     display: inline-block;
     margin: 0 5px;
     padding: 10px;
-    padding-bottom: 7px;
-    font-size: 11.5px;
+    padding-bottom: 8px;
+    font-size: 13.5px;
     letter-spacing: 0.8px;
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border: none;
     background-color: transparent;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
     transition: all 0.25s;
     &_active {
       color: red;
-      font-weight: bolder;
-
     }
     &:hover {
-      // border-bottom: 2px solid red;
-      border-image: url('../assets/images/Rectangle.png');
+      border-bottom: 2px solid red;
       color: red;
       font-weight: bolder;
     }
     &:focus {
       outline: none;
-      border-image: url('../assets/images/Rectangle.png');
+      border-bottom: 2px solid red;
       color: red;
       font-weight: bolder;
     }
@@ -226,14 +200,10 @@ export default {
     bottom: 0;
     left: 0;
     height: 4px;
-    background-image:  url('../assets/images/Rectangle.png');
-    background-size: 100%;
+    background-image: url("../assets/images/Rectangle.png");
     transition: transform 0.4s ease, width 0.4s ease;
+    background-size: 100%;
   }
-}
-.content {
-  margin-top: 30px;
-  font-size: 20px;
 }
 
 
