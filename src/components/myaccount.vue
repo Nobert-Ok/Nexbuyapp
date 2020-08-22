@@ -38,7 +38,7 @@
         <div class="detailed-analysis"></div>
             <div class="info">
                 <ul>
-                    <li><img src="../assets/images/store.png"> My Store <img src="../assets/images/arrow.png" class="arrow"></li>
+                    <li><router-link to="./myStore1"> <img src="../assets/images/store.png"> My Store</router-link> <img src="../assets/images/arrow.png" class="arrow"></li>
                     <div></div>
                     <li><img src="../assets/images/heart.png"> My wish list <img src="../assets/images/arrow.png" class="arrow"></li>
                     <div></div>
@@ -202,6 +202,9 @@ a img{
 .info ul li{
     padding: 15px;
     font-size: 17.5px;
+}
+.info ul li a{
+    color:black;
 }
 .info img{
     width: 19px;
