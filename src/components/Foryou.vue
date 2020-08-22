@@ -35,7 +35,8 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 #gg{
    background: rgb(245, 245, 245);
    width: 100%;

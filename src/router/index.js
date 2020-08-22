@@ -20,6 +20,8 @@ import store from '../components/Nexbuystore1'
 import store2 from '../components/Nexbuystore2'
 import storefooter from '../components/storefooter'
 import cart1 from '../components/emptycart'
+import myStore1 from '../components/myStore1'
+import myStore2 from '../components/myStore2'
 // import cartfooter from '../components/cartfooter'
 
 
@@ -94,6 +96,14 @@ export default new Router({
     {path: '/cart1',      
     name: 'cart1',      
     component: cart1,
+    },
+    {path: '/myStore1',      
+    name: 'myStore1',      
+    component: myStore1,
+    },
+    {path: '/myStore2',      
+    name: 'myStore2',      
+    component: myStore2,
     },
     // {path: '/cartfooter',      
     // name: 'cartfooter',      
