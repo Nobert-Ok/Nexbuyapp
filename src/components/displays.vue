@@ -2,10 +2,10 @@
   <div>
       <section class="sec4">
             <div class="maincontainer2">
-                <div class="contain" v-for="(obj,key) in itemsjson" :key="key">
-                        <a href="#">
+                <div class="contain" v-for="(obj,key) in products" :key="key">
+                        <a href="#"  @click="goTodetail(obj.productId)">
                             <div class="card" id="card">
-                                <img v-bind:src= obj.img alt="">
+                                <img :src="obj.img" alt="">
                                 <div class="card-body">
                                     <p class="card-text" id="text" style="color: red;font-size: 9px;">{{obj.shopname}}
                                         <span>
@@ -54,51 +54,66 @@ import head from './header';
 
 
 export default {
+  name:'displays',
   data () {
     return {
-      itemsjson:[
+      products:[
         {
           shopname: 'Start Kits',
           img: pic1,
           itemname:'Shark Edges snea...',
           mainprice:'NGN 15,000',
+          productId:1,
         },
         {
           shopname: 'RCustomNG',
           img: pic6,
           itemname:'Apple Watch',
           mainprice:'NGN 97,000',
+          productId:2,
         },
         {
           shopname: 'Fez World',
           img: pic4,
           itemname:'Sneaker Shoes',
           mainprice:'NGN 6,000',
+          productId:3,
         },
         {
           shopname: 'Stlyewithdivas',
           img: pic2,
           itemname:'Ultra-modern ladies b...',
           mainprice:'NGN 3,000',
+          productId:4,
         },
         {
           shopname: 'RCustomNG',
           img: pic1,
           itemname:'Bluetooth smart watch',
           mainprice:'NGN 3,000',
+          productId:5,
         },
         {
           shopname: 'Tiyelshop',
           img: pic3,
           itemname:'Burberry T-shirts',
           mainprice:'NGN 11,000',
+          productId:6,
         },
       ]
+    }
+  },
+  methods:{
+    goTodetail(prodId) {
+      let proId=prodId
+      return this.$router.push({name:'purchase',params:{Pid:proId}})
     }
   }
 }
 </script>
 
-<style>
-
+<style scoped>
+a{
+  cursor:pointer;
+}
 </style>

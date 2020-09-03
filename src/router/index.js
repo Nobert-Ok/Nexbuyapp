@@ -22,6 +22,7 @@ import storefooter from '../components/storefooter'
 import cart1 from '../components/emptycart'
 import myStore1 from '../components/myStore1'
 import myStore2 from '../components/myStore2'
+import purchase from '../components/purchase'
 // import cartfooter from '../components/cartfooter'
 
 
@@ -104,6 +105,10 @@ export default new Router({
     {path: '/myStore2',      
     name: 'myStore2',      
     component: myStore2,
+    },
+    {path: '/purchase/:Pid',      
+    name: 'purchase',      
+    component: purchase,
     },
     // {path: '/cartfooter',      
     // name: 'cartfooter',      

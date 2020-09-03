@@ -105,6 +105,7 @@
             </div>
         </div>
     </b-sidebar>
+    <router-view></router-view>
   </div>
 </template>
 
