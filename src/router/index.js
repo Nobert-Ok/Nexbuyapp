@@ -27,6 +27,7 @@ import signpage from '../components/signpage'
 import thankyou from '../components/thankyou'
 import transfer from '../components/transfer'
 import quickpurchase from '../components/quickpurchase'
+import additems from '../components/additems'
 // import cartfooter from '../components/cartfooter'
 
 
@@ -129,6 +130,10 @@ export default new Router({
     {path: '/quickpurchase',      
     name: 'quickpurchase',      
     component: quickpurchase,
+    },
+    {path: '/additems',      
+    name: 'additems',      
+    component: additems,
     },
 ]});
 
