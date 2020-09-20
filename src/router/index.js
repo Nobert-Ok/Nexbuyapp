@@ -23,6 +23,10 @@ import cart1 from '../components/emptycart'
 import myStore1 from '../components/myStore1'
 import myStore2 from '../components/myStore2'
 import purchase from '../components/purchase'
+import signpage from '../components/signpage'
+import thankyou from '../components/thankyou'
+import transfer from '../components/transfer'
+import quickpurchase from '../components/quickpurchase'
 // import cartfooter from '../components/cartfooter'
 
 
@@ -110,10 +114,22 @@ export default new Router({
     name: 'purchase',      
     component: purchase,
     },
-    // {path: '/cartfooter',      
-    // name: 'cartfooter',      
-    // component: cartfooter,
-    // },
+    {path: '/signpage',      
+    name: 'signpage',      
+    component: signpage,
+    },
+    {path: '/thankyou',      
+    name: 'thankyou',      
+    component: thankyou,
+    },
+    {path: '/transfer',      
+    name: 'transfer',      
+    component: transfer,
+    },
+    {path: '/quickpurchase',      
+    name: 'quickpurchase',      
+    component: quickpurchase,
+    },
 ]});
 
 

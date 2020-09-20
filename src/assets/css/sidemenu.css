@@ -1,6 +1,11 @@
 /* .slides{
     position: absolute;
 } */
+#sidebar-backdrop{
+    position: absolute;
+    bottom: 10%;
+    width: 65%;
+}
 
 .details{
     margin-left: 25px;

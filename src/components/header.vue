@@ -61,6 +61,8 @@
                     <p style="font-weight: bold;" class="para">James Itubo</p>
                     <p class="para">RCustomNG store</p>
                     <p class="para"><router-link to='/myaccount' style="color: red;">View full profile</router-link></p>
+
+                    
                     <p class="para"><a href="#" v-b-modal.modal-sm ><img src="../assets/images/premium.png" alt="" class="bullet"> Go Premium</a></p>
                     <b-modal id="modal-sm" centered size="sm" title="Why you need to Go Premium" header-text-variant="light" hide-header-close header-bg-variant='secondary'>
                       <p>Going premium lets you do this
@@ -148,7 +150,8 @@ export default {
 </script>
 
 
-<style lang="scss">
+
+<style lang="scss" scoped>
 .default-tabs {
   width: 100%;
   position: relative;
@@ -221,14 +224,17 @@ input{
 }
 @media only screen and (max-width: 375px) {
 
-.pic div{
+  .pic div{
     display: inline-block;
     padding: 0 9px;
     justify-content: center;
-}
-input{
-    width: 250px;
-}
+  }
+  input{
+      width: 250px;
+  }
+  #modal-sm {
+    width: 250px; /* New width for small modal */
+  }
 }
 @media only screen and (max-width: 320px) {
 
@@ -241,4 +247,20 @@ input{
     width: 225px; 
 }
 }
+</style>
+
+<style lang="css" scoped>
+  input{
+    border-radius: 1000px;
+    border: 1px solid red;
+    padding: 10px 20px;
+    width: 275px;
+    height: 40px;
+    font-size: 9.5px !important;
+}
+
+input:focus{
+    outline: none;
+}
+
 </style>

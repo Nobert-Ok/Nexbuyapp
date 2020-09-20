@@ -88,18 +88,6 @@ html, body {
 }
 
 
-input{
-    border-radius: 1000px;
-    border: 1px solid red;
-    padding: 10px 20px;
-    width: 275px;
-    height: 40px;
-    font-size: 9.5px !important;
-}
-
-input:focus{
-    outline: none;
-}
 
 .pics{
     width: 50px;
@@ -107,6 +95,21 @@ input:focus{
 }
 
 
+@media (max-width: 375px) {
+    .modal .modal-huge {
+      max-width: 80% !important;
+      width: 80% !important;
+      margin:0 auto;
+    }
+}
+
+@media (min-width: 375px) {
+    .modal .modal-huge {
+      max-width: 80% !important;
+      width: 80% !important;
+      margin:0 auto;
+    }
+}
 
 
 
