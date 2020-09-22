@@ -29,6 +29,7 @@ import transfer from '../components/transfer'
 import quickpurchase from '../components/quickpurchase'
 import additems from '../components/additems'
 import deliveryshipping from '../components/deliveryshipping'
+import createpost from '../components/createpost'
 // import cartfooter from '../components/cartfooter'
 
 
@@ -139,6 +140,10 @@ export default new Router({
     {path: '/deliveryshipping',      
     name: 'deliveryshipping',      
     component: deliveryshipping,
+    },
+    {path: '/createpost',      
+    name: 'createpost',      
+    component: createpost,
     },
 ]});
 
